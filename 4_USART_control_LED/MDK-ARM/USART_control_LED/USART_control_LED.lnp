@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"usart_control_led\startup_stm32f103xe.o"
+"usart_control_led\main.o"
+"usart_control_led\gpio.o"
+"usart_control_led\usart.o"
+"usart_control_led\stm32f1xx_it.o"
+"usart_control_led\stm32f1xx_hal_msp.o"
+"usart_control_led\led_drive.o"
+"usart_control_led\stm32f1xx_hal_gpio_ex.o"
+"usart_control_led\stm32f1xx_hal_tim.o"
+"usart_control_led\stm32f1xx_hal_tim_ex.o"
+"usart_control_led\stm32f1xx_hal_uart.o"
+"usart_control_led\stm32f1xx_hal.o"
+"usart_control_led\stm32f1xx_hal_rcc.o"
+"usart_control_led\stm32f1xx_hal_rcc_ex.o"
+"usart_control_led\stm32f1xx_hal_gpio.o"
+"usart_control_led\stm32f1xx_hal_dma.o"
+"usart_control_led\stm32f1xx_hal_cortex.o"
+"usart_control_led\stm32f1xx_hal_pwr.o"
+"usart_control_led\stm32f1xx_hal_flash.o"
+"usart_control_led\stm32f1xx_hal_flash_ex.o"
+"usart_control_led\stm32f1xx_hal_exti.o"
+"usart_control_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "USART_control_LED\USART_control_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USART_control_LED.map" -o USART_control_LED\USART_control_LED.axf
