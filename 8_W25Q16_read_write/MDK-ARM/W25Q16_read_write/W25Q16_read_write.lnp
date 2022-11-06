@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"w25q16_read_write\startup_stm32f103xe.o"
+"w25q16_read_write\main.o"
+"w25q16_read_write\gpio.o"
+"w25q16_read_write\spi.o"
+"w25q16_read_write\stm32f1xx_it.o"
+"w25q16_read_write\stm32f1xx_hal_msp.o"
+"w25q16_read_write\w25qxx_drive.o"
+"w25q16_read_write\stm32f1xx_hal_gpio_ex.o"
+"w25q16_read_write\stm32f1xx_hal_spi.o"
+"w25q16_read_write\stm32f1xx_hal.o"
+"w25q16_read_write\stm32f1xx_hal_rcc.o"
+"w25q16_read_write\stm32f1xx_hal_rcc_ex.o"
+"w25q16_read_write\stm32f1xx_hal_gpio.o"
+"w25q16_read_write\stm32f1xx_hal_dma.o"
+"w25q16_read_write\stm32f1xx_hal_cortex.o"
+"w25q16_read_write\stm32f1xx_hal_pwr.o"
+"w25q16_read_write\stm32f1xx_hal_flash.o"
+"w25q16_read_write\stm32f1xx_hal_flash_ex.o"
+"w25q16_read_write\stm32f1xx_hal_exti.o"
+"w25q16_read_write\stm32f1xx_hal_tim.o"
+"w25q16_read_write\stm32f1xx_hal_tim_ex.o"
+"w25q16_read_write\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "W25Q16_read_write\W25Q16_read_write.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "W25Q16_read_write.map" -o W25Q16_read_write\W25Q16_read_write.axf

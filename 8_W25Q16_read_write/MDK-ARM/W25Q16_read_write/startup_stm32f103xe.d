@@ -1,0 +1,1 @@
+w25q16_read_write\startup_stm32f103xe.o: startup_stm32f103xe.s
