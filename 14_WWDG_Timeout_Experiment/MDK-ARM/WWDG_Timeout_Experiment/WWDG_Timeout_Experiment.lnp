@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"wwdg_timeout_experiment\startup_stm32f103xe.o"
+"wwdg_timeout_experiment\main.o"
+"wwdg_timeout_experiment\gpio.o"
+"wwdg_timeout_experiment\usart.o"
+"wwdg_timeout_experiment\wwdg.o"
+"wwdg_timeout_experiment\stm32f1xx_it.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_msp.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_gpio_ex.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_tim.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_tim_ex.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_uart.o"
+"wwdg_timeout_experiment\stm32f1xx_hal.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_rcc.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_rcc_ex.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_gpio.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_dma.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_cortex.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_pwr.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_flash.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_flash_ex.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_exti.o"
+"wwdg_timeout_experiment\stm32f1xx_hal_wwdg.o"
+"wwdg_timeout_experiment\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "WWDG_Timeout_Experiment\WWDG_Timeout_Experiment.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WWDG_Timeout_Experiment.map" -o WWDG_Timeout_Experiment\WWDG_Timeout_Experiment.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"iwdg_timeout_experiment\startup_stm32f103xe.o"
+"iwdg_timeout_experiment\main.o"
+"iwdg_timeout_experiment\gpio.o"
+"iwdg_timeout_experiment\iwdg.o"
+"iwdg_timeout_experiment\stm32f1xx_it.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_msp.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_gpio_ex.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_iwdg.o"
+"iwdg_timeout_experiment\stm32f1xx_hal.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_rcc.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_rcc_ex.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_gpio.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_dma.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_cortex.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_pwr.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_flash.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_flash_ex.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_exti.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_tim.o"
+"iwdg_timeout_experiment\stm32f1xx_hal_tim_ex.o"
+"iwdg_timeout_experiment\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "IWDG_Timeout_Experiment\IWDG_Timeout_Experiment.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IWDG_Timeout_Experiment.map" -o IWDG_Timeout_Experiment\IWDG_Timeout_Experiment.axf
