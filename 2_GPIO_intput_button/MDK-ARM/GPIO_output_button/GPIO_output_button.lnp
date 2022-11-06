@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"gpio_output_button\startup_stm32f103xe.o"
+"gpio_output_button\button_drive.o"
+"gpio_output_button\main.o"
+"gpio_output_button\gpio.o"
+"gpio_output_button\stm32f1xx_it.o"
+"gpio_output_button\stm32f1xx_hal_msp.o"
+"gpio_output_button\stm32f1xx_hal_gpio_ex.o"
+"gpio_output_button\stm32f1xx_hal_tim.o"
+"gpio_output_button\stm32f1xx_hal_tim_ex.o"
+"gpio_output_button\stm32f1xx_hal.o"
+"gpio_output_button\stm32f1xx_hal_rcc.o"
+"gpio_output_button\stm32f1xx_hal_rcc_ex.o"
+"gpio_output_button\stm32f1xx_hal_gpio.o"
+"gpio_output_button\stm32f1xx_hal_dma.o"
+"gpio_output_button\stm32f1xx_hal_cortex.o"
+"gpio_output_button\stm32f1xx_hal_pwr.o"
+"gpio_output_button\stm32f1xx_hal_flash.o"
+"gpio_output_button\stm32f1xx_hal_flash_ex.o"
+"gpio_output_button\stm32f1xx_hal_exti.o"
+"gpio_output_button\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "GPIO_output_button\GPIO_output_button.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO_output_button.map" -o GPIO_output_button\GPIO_output_button.axf
